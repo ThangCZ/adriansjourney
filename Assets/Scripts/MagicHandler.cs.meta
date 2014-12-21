@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: fa233c4b70dca3140a559f5303a8168a
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fireballPrefab: {instanceID: 0}
+  - fireballDirectionObject: {instanceID: 0}
+  - firestorm: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

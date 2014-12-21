@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 83db9b1566727f249b0e5cdf5417aaa9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bridge
+    100002: bridge_MeshPart0
+    100004: bridge_MeshPart1
+    100006: bridge_MeshPart2
+    100008: ground
+    100010: ground_MeshPart0
+    100012: ground_MeshPart1
+    100014: ground_MeshPart2
+    100016: paths
+    100018: pier
+    100020: riverbed
+    100022: rock
+    100024: slope
+    100026: //RootNode
+    400000: bridge
+    400002: bridge_MeshPart0
+    400004: bridge_MeshPart1
+    400006: bridge_MeshPart2
+    400008: ground
+    400010: ground_MeshPart0
+    400012: ground_MeshPart1
+    400014: ground_MeshPart2
+    400016: paths
+    400018: pier
+    400020: riverbed
+    400022: rock
+    400024: slope
+    400026: //RootNode
+    2300000: bridge_MeshPart0
+    2300002: bridge_MeshPart1
+    2300004: bridge_MeshPart2
+    2300006: ground_MeshPart0
+    2300008: ground_MeshPart1
+    2300010: ground_MeshPart2
+    2300012: paths
+    2300014: pier
+    2300016: riverbed
+    2300018: rock
+    2300020: slope
+    3300000: bridge_MeshPart0
+    3300002: bridge_MeshPart1
+    3300004: bridge_MeshPart2
+    3300006: ground_MeshPart0
+    3300008: ground_MeshPart1
+    3300010: ground_MeshPart2
+    3300012: paths
+    3300014: pier
+    3300016: riverbed
+    3300018: rock
+    3300020: slope
+    4300000: slope
+    4300002: pier
+    4300004: ground_MeshPart0
+    4300006: ground_MeshPart1
+    4300008: ground_MeshPart2
+    4300010: paths
+    4300012: riverbed
+    4300014: rock
+    4300016: bridge_MeshPart0
+    4300018: bridge_MeshPart1
+    4300020: bridge_MeshPart2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
