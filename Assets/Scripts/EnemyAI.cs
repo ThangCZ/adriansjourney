@@ -15,6 +15,8 @@ public class EnemyAI : MonoBehaviour {
 	public GameObject animatedObject;
 	private Animator avatarAnimator;
 
+    private bool enabled = true;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,25 +25,36 @@ public class EnemyAI : MonoBehaviour {
 		spawn = transform.position;
 		targetStats = (PlayerStatsHolder)target.GetComponent<PlayerStatsHolder>();
 	}
-	
+
+    public void setEnabled(bool enabled) {
+        this.enabled = enabled;
+        if(!this.enabled) {
+            agent.Stop();
+        }
+    }
+
 	// Update is called once per frame
 	void Update () 
 	{
-		avatarAnimator.SetBool("Attack", false);
-		avatarAnimator.SetBool("Forward", false);
-		float curDistance = Vector3.Distance(target.transform.position, transform.position);
-		if (curDistance <= closeDistance) {
-						//Debug.Log("Enemy close");
-						agent.Stop ();
-						if (Time.time >= currentAttackCooldown)
-								Attack ();
-				} else if (curDistance < distance) {
-			avatarAnimator.SetBool("Forward", true);
-						agent.SetDestination (target.transform.position);
-				} else {
-			avatarAnimator.SetBool("Forward", true);
-						agent.SetDestination (spawn);
-				}
+        if (enabled) {
+            avatarAnimator.SetBool("Attack", false);
+            avatarAnimator.SetBool("Forward", false);
+            float curDistance = Vector3.Distance(target.transform.position, transform.position);
+            if (curDistance <= closeDistance) {
+                //Debug.Log("Enemy close");
+                agent.Stop();
+                if (Time.time >= currentAttackCooldown)
+                    Attack();
+            } else if (curDistance < distance) {
+                avatarAnimator.SetBool("Forward", true);
+                agent.SetDestination(target.transform.position);
+            } else {
+                avatarAnimator.SetBool("Forward", true);
+                agent.SetDestination(spawn);
+            }
+        } else {
+            
+        }
 	}
 	// Attack the target
 	private void Attack ()

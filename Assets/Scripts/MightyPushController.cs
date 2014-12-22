@@ -11,17 +11,15 @@ public class MightyPushController : MonoBehaviour {
 		
 		//get all colliders within radius
 		Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10);
-		foreach( var c in hitColliders){
-			if(c.tag == "Enemy" || c.tag == "Pushbox"){
-				if(c.rigidbody != null)
+        //Debug.Log(hitColliders.Length);
+        foreach( var c in hitColliders){
+			if(c.tag == "Enemy"){
+                //if(c.rigidbody != null)
 					c.rigidbody.AddExplosionForce(15, transform.position, 10, 0, ForceMode.Impulse);
 				//pro debugovani - oznac zasazeny objekt cervene (bude odstraneno)
-				c.transform.renderer.material.color = Color.red;
-				if(c.tag == "Enemy")
-				{
-					EnemyStatsHolder enemyStatsHolder = c.gameObject.GetComponent<EnemyStatsHolder>();
-					enemyStatsHolder.modifyHealth(-50);
-				}
+                //c.transform.renderer.material.color = Color.red;
+                    EnemyStatsHolder enemyStatsHolder = c.gameObject.GetComponent<EnemyStatsHolder>();
+                    enemyStatsHolder.modifyHealth(-50);
 			}
 		}
 
